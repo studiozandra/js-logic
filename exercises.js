@@ -176,8 +176,14 @@ console.log('notEqual ' + notEqual('onakasuita', 'onakasuita'));
  * Console.log your result.
 */ 
 
-
-
+function spareChange(money){
+  if(money > 100){
+    return true
+  }else{
+    return false
+  }
+}
+console.log('spareChange ' + spareChange(200));
 /*
  * #9
  * Function - dirty30
