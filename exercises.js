@@ -89,8 +89,15 @@ console.log('isGreaterThan ' + isGreaterThan(8, 4))
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo === true){
+    return true
+  }else{
+    return 'not true'
+  }
+}
 
-
+console.log('mustBeTrue ' + mustBeTrue(25 > 100));
 /*
  * #5
  * Function - bigBird
