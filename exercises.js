@@ -33,7 +33,7 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
      return true
    }
  }
- console.log(canVote(40));
+ console.log('canVote ' + canVote(40));
 
 /*
  * #2
@@ -47,7 +47,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
-
+function login(password){
+  if(password === 'test1234'){
+    return 'Login Success!'
+  }else{
+    return 'Failed to log in!'
+  }
+}
+console.log(login('test1234'));
+console.log(login(1234));
 /*
  * #3
  * Function - isGreaterThan
