@@ -133,7 +133,14 @@ console.log('bigBird ' + bigBird('the'));
  * Console.log your result.
 */
 
-
+function isEqual(first, second){
+  if(first === second){
+    return "You look mahvelous!"
+  }else{
+    return "I don't know who you are anymore."
+  }
+}
+console.log('isEqual ' + isEqual('happy', 'nappy'));
 /*
  * #7
  * Function - notEqual
