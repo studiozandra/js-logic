@@ -154,6 +154,15 @@ console.log('isEqual ' + isEqual('happy', 'nappy'));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if(first !== second){
+    return "Opposites do attract."
+  }else{
+    return "Cause it's like you're my mirror."
+  }
+}
+console.log('notEqual ' + notEqual('onakasuita', 'hara peko'));
+console.log('notEqual ' + notEqual('onakasuita', 'onakasuita'));
 
 /*
  * #8
