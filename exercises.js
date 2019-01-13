@@ -315,6 +315,24 @@ console.log('moneyTrain ' + moneyTrain(80));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 5;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+function buyDoughnut(){
+  if(budget !== 0 && budget >= doughnutPrice){
+    return 'you bought 1 doughnut. ' + (budget = budget - doughnutPrice) + (doughnutBought+=1)
+  }
+  if(budget < doughnutPrice || budget <= 0){
+    return "sorry, you don't have enough money left."
+  }
+}
+console.log(buyDoughnut());
+console.log('budget ' + budget);
+console.log('doughnutBought ' + doughnutBought);
+
+console.log(buyDoughnut());
+console.log('budget again ' + budget);
+console.log('doughnutBought again ' + doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
