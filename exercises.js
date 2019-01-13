@@ -184,6 +184,7 @@ function spareChange(money){
   }
 }
 console.log('spareChange ' + spareChange(200));
+
 /*
  * #9
  * Function - dirty30
@@ -198,8 +199,14 @@ console.log('spareChange ' + spareChange(200));
  * Console.log your result.
 */ 
 
-
-
+function dirty30(one, two, three){
+  if((one + two + three) > 30){
+    return true
+  }else{
+    return false
+  }
+}
+console.log('dirty30 ' + dirty30(9, 4, 10));
 /*
  * #10
  * Function - evenStevens
