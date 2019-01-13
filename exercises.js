@@ -242,6 +242,16 @@ console.log('evenStevens ' + evenStevens(21));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return "Welcome to the Legends Lounge."
+  }else{
+    return "Chuck E Cheese is across the street."
+  }
+}
+console.log('daClub ' + daClub(40, 18));
+console.log('daClub ' + daClub(15, 25));
+console.log('daClub ' + daClub(21, 40));
 
 /*
  * #12
@@ -256,7 +266,16 @@ console.log('evenStevens ' + evenStevens(21));
  * Console.log your result.
 */ 
 
-
+function graduation(credit, thesis){
+  if(credit >= 120 || thesis === true){
+    return "Congratulations on a job well done."
+  }else{
+    return "See you in summer school."
+  }
+}
+console.log('graduation ' + graduation(100, true));
+console.log('graduation ' + graduation(120, false));
+console.log('graduation ' + graduation(100, false));
 
 /*
  * #13
