@@ -315,12 +315,12 @@ console.log('moneyTrain ' + moneyTrain(80));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
-var budget = 5;
+var budget = 25;
 var doughnutPrice = 4;
 var doughnutBought = 0;
 function buyDoughnut(){
-  if(budget !== 0 && budget >= doughnutPrice){
-    return 'you bought 1 doughnut. ' + (budget = budget - doughnutPrice) + (doughnutBought+=1)
+  if(budget >= doughnutPrice){
+    return 'you bought 1 doughnut. ' + (budget = budget - doughnutPrice) + (doughnutBought++)
   }
   if(budget < doughnutPrice || budget <= 0){
     return "sorry, you don't have enough money left."
@@ -334,38 +334,36 @@ console.log(buyDoughnut());
 console.log('budget again ' + budget);
 console.log('doughnutBought again ' + doughnutBought);
 
+console.log(buyDoughnut());
+console.log('budget again ' + budget);
+console.log('doughnutBought again ' + doughnutBought);
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
 var special = null;
-function dailySpecials(special){
-  
-  switch(special) {
+function dailySpecials(dayOfWeek){
+  switch(dayOfWeek) {
     case 'Monday':
-      special = 'Aspara Bacon';
-      return special
+    menu = 'Aspara Bacon';
       break;
     case 'Tuesday':
-      special = 'Takoyaki';
-      return special
+    menu = 'Takoyaki';
       break;
     case 'Wednesday':
-      special = 'Okonomiyaki';
-      return special
+    menu = 'Okonomiyaki';
       break;
     case 'Thursday':
-      special = 'Oden';
-      return special
+    menu = 'Oden';
       break;
     case 'Friday':
-      special = 'Hijiki';
-      return special
+    menu = 'Hijiki';
       break;
     default:
-      special = 'Maki zushi';
-    return special
+    menu = 'Maki zushi';
   }
+  return menu;
 }
 console.log('dailySpecials ' + dailySpecials('Saturday'));
 console.log('dailySpecials ' + dailySpecials('Monday'));
