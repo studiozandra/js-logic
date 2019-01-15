@@ -426,7 +426,16 @@ for(var i = 0; i < gamers.length; i++){
  * Console.log your result.
 */
 
-
+var numArray = [89, 44, 41, 32, 100];
+var total = 0;
+function sumItUp(arr){
+  for(var i =0; i<arr.length; i++){
+    console.log(arr[i]);
+    total += arr[i]; // total = total + arr[i]
+  }
+  return total
+}
+console.log('sum of the array is ' + sumItUp(numArray));
 
 /*
  * #18
