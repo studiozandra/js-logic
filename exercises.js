@@ -465,8 +465,8 @@ function allStars(ballers){
 }
 
 allStars(players);
-console.log(east);
-console.log(west);
+console.log('East ' + east);
+console.log('West ' + west);
 
 /*
  * #19
@@ -481,10 +481,23 @@ console.log(west);
 */ 
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
-
+ 
+  
+function subways(special){
+  for(var i = 0; i < special.length; i++){
+    if(i % 2 !== 0){
+      console.log(i);
+      special.splice(i, 1, "Classic Tuna"); 
+      special[i] = "Classic Tuna";
+    }
+  
+}
+return special;
+}
+console.log(subways(subOftheDay));
 
 /*
-Final Boss
+Final Final Boss
  * #20
  * Function - removeLetter
  * Create a function named `removeLetter`, which takes a parameter `str`. 
@@ -496,16 +509,5 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
-  
-
-
-
-
-
-
-
-
 
 
