@@ -450,6 +450,24 @@ console.log('sum of the array is ' + sumItUp(numArray));
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballers){
+  for(var i = 0; i < ballers.length; i++){
+    if(i % 2 === 0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i])
+    }
+  }
+
+}
+
+allStars(players);
+console.log(east);
+console.log(west);
+
 /*
  * #19
  * Function - subways
