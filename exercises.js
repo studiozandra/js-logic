@@ -266,11 +266,11 @@ console.log('daClub ' + daClub(21, 40));
  * Console.log your result.
 */ 
 
-function graduation(credit, thesis){
-  if(credit >= 120 || thesis === true){
-    return "Congratulations on a job well done."
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis === true){
+    return "Congratulations on a job well done.";
   }else{
-    return "See you in summer school."
+    return "See you in summer school.";
   }
 }
 console.log('graduation ' + graduation(100, true));
